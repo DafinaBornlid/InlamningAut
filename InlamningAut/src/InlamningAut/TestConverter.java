@@ -6,7 +6,7 @@ import static org.junit.Assert.assertEquals;
 
 public class TestConverter {
 
-    @Test
+   @Test
     public void testEngBToMorseB() {
 
         Converter converter = new Converter();
@@ -14,7 +14,6 @@ public class TestConverter {
         String actual = converter.getEngLetter("-***");
         assertEquals(expected, actual);
     }
-
 
     @Test
     public void testEngChartoMorseChar() {

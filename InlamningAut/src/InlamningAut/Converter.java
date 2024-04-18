@@ -105,11 +105,11 @@ public class Converter {
 
 
     public String getMorse(String letter) {
+        String morse = "";
         if (lettersToMorse.get(letter.toUpperCase()) != null) {
-            return lettersToMorse.get(letter.toUpperCase());
-        } else {
-            return "";
+            morse = lettersToMorse.get(letter.toUpperCase());
         }
+        return morse;
     }
 
     public String getEngLetter(String letter) {
