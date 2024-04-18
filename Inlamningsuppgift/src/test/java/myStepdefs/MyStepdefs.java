@@ -12,10 +12,7 @@ import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import java.time.Duration;
-
-import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.*;
 
 public class MyStepdefs {
@@ -89,7 +86,7 @@ public class MyStepdefs {
         WebElement confirmEmailInput = driver.findElement(By.id("member_confirmemailaddress"));
         confirmEmailInput.sendKeys(generatedEmail);
 
-        return generatedEmail; // Returnera den genererade eller användarangivna e-postadressen
+        return generatedEmail;
     }
 
     @Given("I have chosen a password {string}")
