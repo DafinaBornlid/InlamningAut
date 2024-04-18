@@ -109,6 +109,7 @@ public class MyStepdefs {
 
     @Given("I have not checked and agreed to the terms and conditions")
     public void iHaveNotCheckedAndAgreedToTheTermsAndConditions() {
+        driver.findElement(By.cssSelector("#signup_form > div:nth-child(12) > div > div:nth-child(2) > div:nth-child(1) > label > span.box"));
     }
 
 
